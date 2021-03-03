@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Search in AlphaSense - Extension",
+  "version": "1.0.0",
+  "icons": {
+    "16" : "icon/as.png"
+  },
+  "background": {
+    "scripts": [
+      "script/as-context-menu.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus"
+  ]
+}
