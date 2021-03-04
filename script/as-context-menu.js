@@ -15,9 +15,10 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
         let phrase = info.selectionText;
         console.log("selected phrase " + phrase);
+        chrome.tabs.create(
+            {'url': chrome.runtime.getURL("../static/send.html")},
+            function (tab){
 
-        chrome.tabs.create({
-            'url': 'https://research.alpha-sense.com/'
-        }, function (tab){});
+            });
     }
 });
